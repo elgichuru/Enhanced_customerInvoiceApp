@@ -12,6 +12,19 @@ if($category_id == null || $category_id == false || $code == null || $name == nu
     
 } else {
     require_once 'database.php';
+    //add products to the databse
+    $query='insert into products(categoryID,productCode,productName,listPrice) '
+            . 'values(:category_ID,:code,:name,:price)';
+    $statement1->bindvalue(':category_ID',$category_id);
+    $statement1->bindvalue(':code',$code);
+    $statement1->bindvalue(':name',$name);
+    $statement1->bindvalue(':price',$price);
+    $statement1->execute();
+    $statement1->closecursor();
+    
+    //display the product list page
+    include 'index.php';
+    
 }
     
 
