@@ -14,7 +14,8 @@ $statement->closeCursor();
 <!-- the head section -->
 <head>
     <title>My Guitar Shop</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="icon/x-image" href="favico.ico">
 </head>
 
 <!-- the body section -->
