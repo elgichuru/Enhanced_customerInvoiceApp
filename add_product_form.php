@@ -6,12 +6,12 @@ $statement->execute();
 $categories=$statement->fetchall();
 $statement->closecursor();
 ?>
-<!<!doctype html>
+<!doctype html>
 <html>
     <head>
         <title>My guitar shop.</title>
         <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="icon" type="icon/x-image" href="main.css">
+        <link rel="icon" type="icon/x-image" href="favico.ico">
     </head>
     <body>
         <header><h1>Product Manager.</h1></header>

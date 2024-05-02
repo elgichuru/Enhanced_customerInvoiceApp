@@ -10,12 +10,12 @@ if(!isset($category_id)){
 }
 //get name for selected category
         $querycategory='select * from categories where categoryID=:category_id';
-            $statemnet1=$db->prepare($querycategory);
-            $statemnet1->bindvalue(':category_id',$category_id);
+            $statement1=$db->prepare($querycategory);
+            $statement1->bindvalue(':category_id',$category_id);
             $statement1->execute();
             $category=$statement1->fetch();
             $category_name=$category['categoryName'];
-            $statement1.closecursor();
+            $statement1->closecursor();
         
             //get all categories
             $queryAllcategories='select * from categories';
@@ -82,7 +82,7 @@ if(!isset($category_id)){
             </section>
         </main>
         <footer>
-            <p>&copy;<?php echo date("y"); ?>My guitar Shop, Inc.</p>
+            <p>&copy; <?php echo date("Y"); ?>My guitar Shop, Inc.</p>
         </footer>
     </body>
 </html>

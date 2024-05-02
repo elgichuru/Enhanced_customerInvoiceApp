@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>My guitar shop.</title>
-        <link rel="stylesheet" type="css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="icon" type="image/x-icon" href="favico.ico">  
     </head>
     <body>
